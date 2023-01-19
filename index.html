@@ -1,57 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="img/icono.png" type="image/x-icon" />
-    <title>TaTeTi</title>
+    <title> TaTeTi - Inicio </title>
 
-    <link rel="stylesheet" href="styles.css">
-    <script src="tateti.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles_inicio.css">
 </head>
 
 <body>
-    <h1 id="turno" class="turno">
-        Jugador X
-    </h1>
+    <main class="m-5 p-5 bg-white">
+        <h1 class="text-center mb-2">
+            <strong>
+                TaTeTi o Tres en Línea
+            </strong>
+        </h1>
+        <h3> ¿Cómo jugar? </h3>
+        <p>
+            El TaTeTi o Tres en Línea es un juego de estrategia, con muy poca complejidad. Ubicando cruces o círculos en
+            una grilla se deberá formar una serie consecutiva de uno de los dos
+            símbolos: la cruz o el círculo.
+        </p>
+        <p>
+            En esté caso la modalidad de juego es de multijugador desde el mismo dispositivo. Turnandose, tanto el
+            jugador
+            1 (cruz) como el jugador 2 (circulo), iran ubicando su simbolo dentro del tablero.
+        </p>
+        <p>
+            En caso de que alguno logre ubicar 3 de sus simbolos en linea ganara y en caso contrario habra un empate. En
+            ambas situaciones el juego finalizara anunciando el resultado y dando la opción de volver a comenzar.
+        </p>
+        <a class="btn-jugar" href="/index_juego.html"> Jugar </a>
+    </main>
 
-    <div id="tablero" class="tablero">
-        <div class="celda">
-            <div class="figura"></div>
-        </div>
-        <div class="celda">
-            <div class="figura"></div>
-        </div>
-        <div class="celda">
-            <div class="figura"></div>
-        </div>
-        <div class="celda">
-            <div class="figura"></div>
-        </div>
-        <div class="celda">
-            <div class="figura"></div>
-        </div>
-        <div class="celda">
-            <div class="figura"></div>
-        </div>
-        <div class="celda">
-            <div class="figura"></div>
-        </div>
-        <div class="celda">
-            <div class="figura"></div>
-        </div>
-        <div class="celda">
-            <div class="figura"></div>
-        </div>
-    </div>
-
-    <div id="fin-del-juego" class="fin-del-juego">
-        <p id="mensaje-final">Gano O!</p>
-        <button id="reiniciar">Jugar de nuevo</button>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -27,7 +27,7 @@ reiniciarJuego();
 //funciones
 function mostrarFigura(evento){
     let elemento = evento.target.firstElementChild;
-    turno.innerText = turnoX ? "Jugador O" : "Jugador X";
+    turno.innerText = turnoX ? "Turno del Jugador O" : "Turno del Jugador X";
     if(turnoX){
         hacerMovimiento(elemento, "x");
         turnoX = false;
@@ -60,7 +60,7 @@ function reiniciarJuego(event){
     contadorDeTurnos = 1;
     finDelJuegoPantalla.style.display = "none";
     turnoX = true;
-    turno.innerText = "Jugador X";
+    turno.innerText = "Empieza el Jugador X";
     celdasArray.forEach(element => {
         element.firstElementChild.setAttribute("class", "figura");
         element.addEventListener('click', mostrarFigura, {once: true});
@@ -101,9 +101,3 @@ function buscarGanador(posicionesActuales){
     }
     return false;
 }
-
-
-
-
-
-
